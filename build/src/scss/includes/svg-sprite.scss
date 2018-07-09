@@ -1,0 +1,137 @@
+.svg-icon {
+    font-size: 10px;
+    &:before {
+      content:' ';
+      vertical-align:middle;
+      display: inline-block;
+      background-image: url("../img/svg-sprite.svg");
+      background-repeat: no-repeat;
+      background-size: 6.3em 47.8em;
+
+      .no-svg & {
+        background-image: url("../dest/img/svg-sprite.png");
+      }
+    }
+}
+
+
+
+
+.svg-icon.call-center-girl {
+  &:before {
+      background-position: -0.5em -0.5em;
+      width: 5em;
+      height: 6.6em;
+    }
+  }
+
+  @mixin svg-icon-call-center-girl(){
+    @extend .call-center-girl;
+  }
+
+
+.svg-icon.facebook {
+  &:before {
+      background-position: -0.5em -8.1em;
+      width: 1em;
+      height: 1.9em;
+    }
+  }
+
+  @mixin svg-icon-facebook(){
+    @extend .facebook;
+  }
+
+
+.svg-icon.flyer-2 {
+  &:before {
+      background-position: -0.5em -11em;
+      width: 3.5em;
+      height: 7em;
+    }
+  }
+
+  @mixin svg-icon-flyer-2(){
+    @extend .flyer-2;
+  }
+
+
+.svg-icon.gift {
+  &:before {
+      background-position: -0.5em -19em;
+      width: 5.3em;
+      height: 5em;
+    }
+  }
+
+  @mixin svg-icon-gift(){
+    @extend .gift;
+  }
+
+
+.svg-icon.gold-medal {
+  &:before {
+      background-position: -0.5em -25em;
+      width: 5em;
+      height: 6.2em;
+    }
+  }
+
+  @mixin svg-icon-gold-medal(){
+    @extend .gold-medal;
+  }
+
+
+.svg-icon.linked-in {
+  &:before {
+      background-position: -0.5em -32.2em;
+      width: 2em;
+      height: 2em;
+    }
+  }
+
+  @mixin svg-icon-linked-in(){
+    @extend .linked-in;
+  }
+
+
+.svg-icon.pininterest {
+  &:before {
+      background-position: -0.5em -35.2em;
+      width: 1.4em;
+      height: 1.8em;
+    }
+  }
+
+  @mixin svg-icon-pininterest(){
+    @extend .pininterest;
+  }
+
+
+.svg-icon.smartphone-6 {
+  &:before {
+      background-position: -0.5em -38em;
+      width: 4em;
+      height: 6.7em;
+    }
+  }
+
+  @mixin svg-icon-smartphone-6(){
+    @extend .smartphone-6;
+  }
+
+
+.svg-icon.twitter {
+  &:before {
+      background-position: -0.5em -45.7em;
+      width: 2.1em;
+      height: 1.6em;
+    }
+  }
+
+  @mixin svg-icon-twitter(){
+    @extend .twitter;
+  }
+
+
+

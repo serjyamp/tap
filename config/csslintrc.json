@@ -1,9 +1,0 @@
-{
-	"important" : false,
-	"universal-selector" : false,
-	"font-sizes" : false,
-	"order-alphabetical": false,
-	"box-sizing" : false,
-	"box-model" : false,
-	"adjoining-classes" : false
-}

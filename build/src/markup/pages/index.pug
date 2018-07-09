@@ -1,4 +1,45 @@
 extends ../template
 
 block content
-	
+	section.sell
+		.container.sell__container
+			.sell__content
+				.sell__heading-wrap
+					h1.h1 Продавайте через магазины Tap.az
+				p.sell__text Почему это выгодно и удобно — рассказываем на примере кругосветного путешествия
+				a.btn(href="#") Создать магазин
+	section.biz
+		.container
+			.biz__heading-wrap
+				h2.h2 Tap.az для малого бизнеса:
+			-
+				var bizList = [
+					["gift", "Пакет платных услуг в подарок", "Вы получите кешбэк в виде пакета услуг VIP и Премиум"],
+					["flyer-2", "Брендированная страница", "Оформите страницу фирменной айдентикой. Станьте узнаваемым."],
+					["call-center-girl", "Личный консультант", "Никаких очередей — все вопросы решит консультант."],
+					["smartphone-6", "Полностью мобильный магазин", "Личная страница, товары и услуги доступны прямо в телефоне."],
+					["gold-medal", "Премиальные позиции на сайте", "Отображение магазина и товаров в топе на главной странице сайта."],
+				];
+			ul.biz-list
+				each item in bizList
+					li.biz-list__item
+						.biz-list__icon-wrap
+							i.svg-icon(class=item[0])
+						h4.h4.color-blue= item[1]
+						h5.h5= item[2]
+	section.all
+		.container.all__container
+			h3.h3 Все товары на фирменной странице  магазина
+	section.with
+		.container.with__container
+			.with__heading-wrap
+				h1.h1 C магазином на Tap.az продавать удобно!
+			.with__form
+				p Оставьте свои контакты и мы с Вами свяжемся.
+				form(action="")
+					.with__form-group
+						input(type="text" placeholder="Имя").input
+					.with__form-group
+						input(type="tel" placeholder="Контактный номер").input
+					.with__form-group.with__form-group--last
+						button(type="submit").btn.btn--larger Подать заявку

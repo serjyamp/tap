@@ -1,24 +1,22 @@
 //- template page
 - var css = "css/";
-- var js = "js/";
-- var vendor = "vendor/";
 - var i = "img/";
+- var js = "js/";
 
 doctype html
 html(lang='en')
 	head
 		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		
-		title Default
+		title Tap.az (Sergei Yampolskii)
 		
-		block styles
-		
-		link(rel="stylesheet", href=css + "main.css")
+		link(rel="stylesheet", href=css + "main.min.css")
 	body
+		include blocks/header/header
+
 		main
 			block content
 
-		script(src=js + "js.js")
+		include blocks/footer/footer
 
-		block scripts
+		script(src=js + "js.min.js")

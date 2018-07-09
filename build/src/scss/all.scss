@@ -1,6 +1,10 @@
 // all styles
+@import '../../../node_modules/normalize.css/normalize';
 @import 'includes/var';
+@import 'includes/common';
 @import 'includes/fonts';
-// @import 'includes/icons';
+@import 'includes/svg-sprite';
 
+@import '../markup/blocks/header/header';
+@import '../markup/blocks/footer/footer';
 @import 'includes/main';
